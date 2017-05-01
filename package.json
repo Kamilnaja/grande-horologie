@@ -1,0 +1,15 @@
+{
+  "name": "grandehorologie",
+  "version": "1.0.0",
+  "description": "Website for watch company",
+  "main": "index.js",
+  "dependencies": {
+    "reset-css": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kamil Naja",
+  "license": "ISC"
+}
