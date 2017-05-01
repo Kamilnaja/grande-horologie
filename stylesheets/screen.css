@@ -30,7 +30,7 @@ h1, h2, h3, h4 {
 /* line 23, ../sass/_typography.scss */
 h1 {
   font-size: 3.90625rem;
-  line-height: 3.96rem;
+  line-height: 4.68rem;
   margin-top: 3.24rem;
   margin-bottom: 2.4rem;
 }
@@ -59,7 +59,7 @@ h4 {
   margin-bottom: 2.04rem;
 }
 
-/* line 3, ../sass/screen.scss */
+/* line 4, ../sass/screen.scss */
 * {
   -webkit-box-sizing: border-box;
   /* iOS <= 4 i Android <= 2.3 */
@@ -69,23 +69,33 @@ h4 {
   /* Chrome, Opera, Safari 5+ i IE 8+ */
 }
 
-/* line 8, ../sass/screen.scss */
+/* line 10, ../sass/screen.scss */
 body {
   background-color: #171e25;
   color: white;
   font-family: 'Merriweather', serif;
 }
 
-/* line 13, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
   width: 90%;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 24, ../sass/screen.scss */
+.nav-wrapper {
+  width: 100%;
+  background-color: white;
+  color: #171e25;
+}
+
+/* line 29, ../sass/screen.scss */
 .navbar {
+  min-height: 60px;
   width: 90%;
   max-width: 960px;
   padding-left: 15px;
@@ -94,74 +104,108 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  background-color: white;
+  color: #171e25;
+}
+/* line 42, ../sass/screen.scss */
+.navbar .logo {
+  margin-top: 7px;
+  margin-bottom: 0;
+}
+/* line 46, ../sass/screen.scss */
+.navbar .navlinks {
+  line-height: inherit;
+  margin-bottom: inherit;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .navbar.mobile {
-  flex-direction: column;
-}
-/* line 33, ../sass/screen.scss */
-.navbar.mobile .navlinks {
+  display: flex;
   flex-flow: column;
-  align-items: baseline;
+}
+/* line 55, ../sass/screen.scss */
+.navbar.mobile .navlinks {
+  display: block;
 }
 
-/* line 38, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .navlinks {
   display: flex;
   align-items: center;
   margin-right: 50px;
 }
-/* line 42, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 .navlinks li {
   margin-right: 5px;
   margin-left: 5px;
 }
-/* line 45, ../sass/screen.scss */
-.navlinks li a {
-  color: white;
-  text-decoration: none;
-  transition: 0.3s ease;
+@media (max-width: 768px) {
+  /* line 70, ../sass/screen.scss */
+  .navlinks li:first-child {
+    margin-top: 10px;
+  }
 }
-/* line 49, ../sass/screen.scss */
+/* line 74, ../sass/screen.scss */
+.navlinks li a {
+  color: #171e25;
+  text-decoration: none;
+  transition: 0.2s ease;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  display: inline-block;
+}
+/* line 84, ../sass/screen.scss */
 .navlinks li a:hover {
-  color: blanchedalmond;
+  color: #879eb4;
 }
 
-/* line 55, ../sass/screen.scss */
+@media (min-width: 768px) {
+  /* line 92, ../sass/screen.scss */
+  .hamburger {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  /* line 98, ../sass/screen.scss */
+  .navlinks {
+    display: none;
+  }
+}
+/* line 103, ../sass/screen.scss */
 .hamburger {
   width: 44px;
   height: 44px;
-  background-color: white;
+  background-color: #171e25;
   position: absolute;
   right: 15px;
-  top: 15px;
+  top: 7px;
   cursor: pointer;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .text-center {
   text-align: center !important;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 69, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 .full-width {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-/* line 74, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .half-width {
   float: left;
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  /* line 74, ../sass/screen.scss */
+  /* line 125, ../sass/screen.scss */
   .half-width {
     width: 50%;
   }

@@ -1,22 +1,33 @@
 @import 'variables';
 @import 'typography';
+
 * {
   -webkit-box-sizing: border-box; /* iOS <= 4 i Android <= 2.3 */
   -moz-box-sizing: border-box; /* Firefox */
   box-sizing: border-box; /* Chrome, Opera, Safari 5+ i IE 8+ */
 }
+
 body {
-  background-color: #171e25;
+  background-color: $motive;
   color: white;
   font-family: 'Merriweather', serif;
 }
+
 .container {
+  padding-left: 15px;
+  padding-right: 15px;
   width: 90%;
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
+.nav-wrapper {
+  width: 100%;
+  background-color: white;
+  color: $motive;
+}
 .navbar {
+  min-height: 60px;
   width: 90%;
   max-width: 960px;
   padding-left: 15px;
@@ -25,52 +36,92 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-
-}
-.navbar.mobile {
-  flex-direction: column;
+  //align-items: center;
+  background-color: white;
+  color: $motive;
+  .logo {
+    margin-top: 7px;
+    margin-bottom: 0;
+  }
   .navlinks {
-    flex-flow: column;
-    align-items: baseline;
+    line-height: inherit;
+    margin-bottom: inherit;
   }
 }
+
+.navbar.mobile {
+  display: flex;
+  flex-flow: column;
+  .navlinks {
+    display: block;
+  }
+}
+
 .navlinks {
   display: flex;
   align-items: center;
   margin-right: 50px;
+
   li {
+
     margin-right: 5px;
     margin-left: 5px;
+    @media(max-width: 768px) {
+      &:first-child {
+        margin-top: 10px;
+      }
+    }
     a {
-      color: white;
+      color: $motive;
       text-decoration: none;
-      transition: 0.3s ease;
+      transition: 0.2s ease;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      display: inline-block;
+
       &:hover {
-        color: blanchedalmond;
+        color: lighten($motive, 50%);
       }
     }
   }
 }
+
+@media(min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .navlinks {
+    display: none;
+  }
+}
+
 .hamburger {
   width: 44px;
   height: 44px;
-  background-color: white;
+  background-color: $motive;
   position: absolute;
   right: 15px;
-  top: 15px;
+  top: 7px;
   cursor: pointer;
 }
+
 .text-center {
   text-align: center !important;
   margin-left: auto;
   margin-right: auto;
 }
+
 .full-width {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
+
 .half-width {
   float: left;
   padding-right: 15px;
