@@ -25,20 +25,32 @@ h1, h2, h3, h4 {
 h1 {
   font-size: $fontsize * 1.35 * 1.35 * 1.35 * 1.35;
   margin-bottom: $lineheight * 10px;
+  @media(max-width: 500px) {
+    font-size: $fontsize * 1.35 * 1.35 * 1.35;
+  }
 }
 
 h2 {
   font-size: $fontsize * 1.35 * 1.35 * 1.35;
   margin-bottom: $lineheight * 10px;
+  @media(max-width: 500px) {
+    font-size: $fontsize * 1.35 * 1.35;
+  }
 }
 
 h3 {
   font-size: $fontsize * 1.35 * 1.35;
   margin-bottom: $lineheight * 8.5px;
+  @media(max-width: 500px) {
+    font-size: $fontsize * 1.35;
+  }
 }
 
 h4 {
   font-size: $fontsize * 1.35;
   margin-bottom: $lineheight * 8.5px;
+  @media(max-width: 500px) {
+    font-size: $fontsize;
+  }
 }
 
