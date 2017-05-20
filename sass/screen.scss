@@ -172,6 +172,7 @@ main {
   padding-top: 50px;
   padding-bottom: 50px;
   background-image: url("https://images.pexels.com/photos/277431/pexels-photo-277431.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
+  background-position: 50% 50%;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;
@@ -192,6 +193,12 @@ main {
     background-color: rgba(5, 5, 5, 0.2);
     margin: 10px;
     position: relative;
+    @media(max-width: 500px) {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 15px;
+      padding-right: 15px;
+    }
   }
   .price {
     background-color: #1b6d85;
@@ -219,8 +226,12 @@ main {
 }
 .watch-wrapper {
   text-align: center;
-  padding: 20px 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   margin: 10px;
+  @media(max-width: 400px) {
+    margin: 0;
+  }
   border-radius: 5px;
 
    img {
@@ -236,5 +247,6 @@ main {
   p {
     text-align: left;
     margin-top: 10px;
+    padding: 10px;
   }
 }
