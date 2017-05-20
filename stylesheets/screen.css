@@ -337,7 +337,7 @@ main {
   padding-top: 50px;
   padding-bottom: 50px;
   background-size: cover;
-  background: url("https://images.pexels.com/photos/277431/pexels-photo-277431.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") no-repeat 50% 50%;
+  background: url("../img/seikobg.png") no-repeat 100% 100%;
   text-align: center;
 }
 @media (min-width: 1366px) {
@@ -431,4 +431,10 @@ main {
   text-align: left;
   margin-top: 10px;
   padding: 10px;
+}
+
+/* line 250, ../sass/screen.scss */
+.light {
+  background-color: white;
+  color: #171e25;
 }
