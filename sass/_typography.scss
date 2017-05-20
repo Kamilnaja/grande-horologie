@@ -11,6 +11,7 @@ body {
 p, ul, ol, dl {
   font-size: $fontsize;
   margin-bottom: $fontsize * 1.5;
+  line-height: 1.4;
 }
 
 hr {
@@ -23,25 +24,21 @@ h1, h2, h3, h4 {
 }
 h1 {
   font-size: $fontsize * 1.35 * 1.35 * 1.35 * 1.35;
-  margin-top: $lineheight * 13.5px;
   margin-bottom: $lineheight * 10px;
 }
 
 h2 {
   font-size: $fontsize * 1.35 * 1.35 * 1.35;
-  margin-top: $lineheight * 13.5px;
   margin-bottom: $lineheight * 10px;
 }
 
 h3 {
   font-size: $fontsize * 1.35 * 1.35;
-  margin-top: $lineheight * 11.5px;
   margin-bottom: $lineheight * 8.5px;
 }
 
 h4 {
   font-size: $fontsize * 1.35;
-  margin-top: $lineheight * 11.5px;
   margin-bottom: $lineheight * 8.5px;
 }
 
