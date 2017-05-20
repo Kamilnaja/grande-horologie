@@ -275,15 +275,16 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
 }
-/* line 187, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .watches-list li {
   flex: 1;
   background-color: rgba(5, 5, 5, 0.2);
   margin: 10px;
   position: relative;
 }
-/* line 193, ../sass/screen.scss */
+/* line 194, ../sass/screen.scss */
 .watches-list .price {
   background-color: #1b6d85;
   position: absolute;
@@ -294,7 +295,7 @@ main {
 }
 
 @media screen and (min-width: 772px) {
-  /* line 204, ../sass/screen.scss */
+  /* line 205, ../sass/screen.scss */
   .watches-list {
     display: flex;
     flex-wrap: wrap;
@@ -302,19 +303,19 @@ main {
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 212, ../sass/screen.scss */
+  /* line 213, ../sass/screen.scss */
   .watches-list li {
     width: calc(100% / 3);
   }
 }
-/* line 217, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .watch-wrapper {
   text-align: center;
   padding: 20px 20px;
   margin: 10px;
   border-radius: 5px;
 }
-/* line 223, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .watch-wrapper img {
   max-width: 225px;
   height: auto;
@@ -322,11 +323,11 @@ main {
   margin-right: auto;
   display: inline-block;
 }
-/* line 230, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .watch-wrapper h4 {
   text-align: center;
 }
-/* line 233, ../sass/screen.scss */
+/* line 234, ../sass/screen.scss */
 .watch-wrapper p {
   text-align: left;
   margin-top: 10px;

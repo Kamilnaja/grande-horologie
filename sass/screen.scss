@@ -184,6 +184,7 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style-type: none;
   li {
     flex: 1;
     background-color: rgba(5, 5, 5, 0.2);
