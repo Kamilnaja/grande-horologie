@@ -320,7 +320,7 @@ main {
 .hero-img {
   width: 100%;
   background-size: cover;
-  background: url("https://static.pexels.com/photos/25831/pexels-photo-25831.jpg") fixed 50% 50%;
+  background: url("https://static.pexels.com/photos/25831/pexels-photo-25831.jpg") no-repeat fixed 50% 50%;
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -336,10 +336,8 @@ main {
 .middle-img-section {
   padding-top: 50px;
   padding-bottom: 50px;
-  background-image: url("https://images.pexels.com/photos/277431/pexels-photo-277431.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb");
-  background-position: 50% 50%;
-  background-attachment: fixed;
   background-size: cover;
+  background: url("https://images.pexels.com/photos/277431/pexels-photo-277431.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb") no-repeat 50% 50%;
   text-align: center;
 }
 @media (min-width: 1366px) {
@@ -350,20 +348,20 @@ main {
   }
 }
 
-/* line 180, ../sass/screen.scss */
+/* line 178, ../sass/screen.scss */
 .more-info {
   background-color: white;
   color: #171e25;
 }
 
-/* line 185, ../sass/screen.scss */
+/* line 183, ../sass/screen.scss */
 .watches-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
 }
-/* line 190, ../sass/screen.scss */
+/* line 188, ../sass/screen.scss */
 .watches-list li {
   flex: 1;
   background-color: rgba(5, 5, 5, 0.2);
@@ -371,7 +369,7 @@ main {
   position: relative;
 }
 @media (max-width: 500px) {
-  /* line 190, ../sass/screen.scss */
+  /* line 188, ../sass/screen.scss */
   .watches-list li {
     margin-left: 0;
     margin-right: 0;
@@ -379,18 +377,17 @@ main {
     padding-right: 15px;
   }
 }
-/* line 202, ../sass/screen.scss */
+/* line 200, ../sass/screen.scss */
 .watches-list .price {
   background-color: #1b6d85;
-  position: absolute;
   bottom: 0;
   width: 100%;
-  left: 50%;
-  transform: translateX(-50%);
+  position: absolute;
+  right: 0;
 }
 
 @media screen and (min-width: 772px) {
-  /* line 213, ../sass/screen.scss */
+  /* line 210, ../sass/screen.scss */
   .watches-list {
     display: flex;
     flex-wrap: wrap;
@@ -398,12 +395,12 @@ main {
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 221, ../sass/screen.scss */
+  /* line 218, ../sass/screen.scss */
   .watches-list li {
     width: calc(100% / 3);
   }
 }
-/* line 226, ../sass/screen.scss */
+/* line 223, ../sass/screen.scss */
 .watch-wrapper {
   text-align: center;
   padding-top: 20px;
@@ -412,12 +409,12 @@ main {
   border-radius: 5px;
 }
 @media (max-width: 400px) {
-  /* line 226, ../sass/screen.scss */
+  /* line 223, ../sass/screen.scss */
   .watch-wrapper {
     margin: 0;
   }
 }
-/* line 236, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .watch-wrapper img {
   max-width: 225px;
   height: auto;
@@ -425,11 +422,11 @@ main {
   margin-right: auto;
   display: inline-block;
 }
-/* line 243, ../sass/screen.scss */
+/* line 240, ../sass/screen.scss */
 .watch-wrapper h4 {
   text-align: center;
 }
-/* line 246, ../sass/screen.scss */
+/* line 243, ../sass/screen.scss */
 .watch-wrapper p {
   text-align: left;
   margin-top: 10px;
