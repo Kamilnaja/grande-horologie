@@ -5,11 +5,11 @@ html {
 body {
   color: black;
   background-color: white;
+  line-height: $lineheight;
 }
 
 p, ul, ol, dl {
   font-size: $fontsize;
-  line-height: $fontsize * 1.5;
   margin-bottom: $fontsize * 1.5;
 }
 
@@ -19,32 +19,29 @@ hr {
 h1, h2, h3, h4 {
   font-family: Verdana, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
+  line-height: $lineheight + 0.05;
 }
 h1 {
-  font-size: $fontsize * 1.25 * 1.25 * 1.25 * 1.25;
-  line-height: $lineheight * 1.95;
-  margin-top: $lineheight * 1.35;
-  margin-bottom: $lineheight;
+  font-size: $fontsize * 1.35 * 1.35 * 1.35 * 1.35;
+  margin-top: $lineheight * 13.5px;
+  margin-bottom: $lineheight * 10px;
 }
 
 h2 {
-  font-size: $fontsize * 1.25 * 1.25 * 1.25;
-  line-height: $lineheight * 1.65;
-  margin-top: $lineheight * 1.35;
-  margin-bottom: $lineheight;
+  font-size: $fontsize * 1.35 * 1.35 * 1.35;
+  margin-top: $lineheight * 13.5px;
+  margin-bottom: $lineheight * 10px;
 }
 
 h3 {
-  font-size: $fontsize * 1.25 * 1.25;
-  line-height: $lineheight * 1.5;
-  margin-top: $lineheight * 1.15;
-  margin-bottom: $lineheight * 0.85;
+  font-size: $fontsize * 1.35 * 1.35;
+  margin-top: $lineheight * 11.5px;
+  margin-bottom: $lineheight * 8.5px;
 }
 
 h4 {
-  font-size: $fontsize * 1.25;
-  line-height: $lineheight;
-  margin-top: $lineheight * 1.15;
-  margin-bottom: $lineheight * 0.85;
+  font-size: $fontsize * 1.35;
+  margin-top: $lineheight * 11.5px;
+  margin-bottom: $lineheight * 8.5px;
 }
 

@@ -13,7 +13,12 @@ body {
   font-family: 'Merriweather', serif;
 }
 
+img {
+  max-width: 100%;
+}
+
 .container {
+  padding-top: 30px;
   padding-left: 15px;
   padding-right: 15px;
   width: 90%;
@@ -43,6 +48,10 @@ body {
   //align-items: center;
   background-color: white;
   color: $motive;
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
   .logo {
     margin-top: 7px;
     margin-bottom: 0;
@@ -111,7 +120,6 @@ body {
     cursor: pointer;
     margin-top: 7px;
     margin-right: 7px;
-
   }
 }
 
@@ -138,4 +146,17 @@ body {
 
 main {
   padding-top: 50px;
+}
+//todo - add better logo
+.hero-img {
+  width: 100%;
+  background-image: url("https://static.pexels.com/photos/25831/pexels-photo-25831.jpg");
+  background-position: 50% 50%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  @media(min-width: 1366px) {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+
 }
