@@ -2,6 +2,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400");
 /* line 6, ../sass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -59,80 +60,81 @@ table {
   border-spacing: 0;
 }
 
-/* line 1, ../sass/_typography.scss */
+/* line 3, ../sass/_typography.scss */
 html {
   font-size: 62.5%;
 }
 
-/* line 5, ../sass/_typography.scss */
+/* line 7, ../sass/_typography.scss */
 body {
   color: black;
   background-color: white;
   line-height: 1.4;
 }
 
-/* line 11, ../sass/_typography.scss */
+/* line 13, ../sass/_typography.scss */
 p, ul, ol, dl {
   font-size: 1.6rem;
   margin-bottom: 2.4rem;
   line-height: 1.4;
 }
 
-/* line 17, ../sass/_typography.scss */
+/* line 19, ../sass/_typography.scss */
 hr {
   margin: 1.6rem 0 1.6rem 0;
 }
 
-/* line 20, ../sass/_typography.scss */
+/* line 22, ../sass/_typography.scss */
 h1, h2, h3, h4 {
-  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-family: Lato, Verdana, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   line-height: 1.45;
+  font-weight: 300;
 }
 
-/* line 25, ../sass/_typography.scss */
+/* line 28, ../sass/_typography.scss */
 h1 {
   font-size: 5.31441rem;
   margin-bottom: 14px;
 }
 @media (max-width: 500px) {
-  /* line 25, ../sass/_typography.scss */
+  /* line 28, ../sass/_typography.scss */
   h1 {
     font-size: 3.9366rem;
   }
 }
 
-/* line 33, ../sass/_typography.scss */
+/* line 36, ../sass/_typography.scss */
 h2 {
   font-size: 3.9366rem;
   margin-bottom: 14px;
 }
 @media (max-width: 500px) {
-  /* line 33, ../sass/_typography.scss */
+  /* line 36, ../sass/_typography.scss */
   h2 {
     font-size: 2.916rem;
   }
 }
 
-/* line 41, ../sass/_typography.scss */
+/* line 44, ../sass/_typography.scss */
 h3 {
   font-size: 2.916rem;
   margin-bottom: 11.9px;
 }
 @media (max-width: 500px) {
-  /* line 41, ../sass/_typography.scss */
+  /* line 44, ../sass/_typography.scss */
   h3 {
     font-size: 2.16rem;
   }
 }
 
-/* line 49, ../sass/_typography.scss */
+/* line 52, ../sass/_typography.scss */
 h4 {
   font-size: 2.16rem;
   margin-bottom: 11.9px;
 }
 @media (max-width: 500px) {
-  /* line 49, ../sass/_typography.scss */
+  /* line 52, ../sass/_typography.scss */
   h4 {
     font-size: 1.6rem;
   }
@@ -363,10 +365,41 @@ main {
 }
 /* line 188, ../sass/screen.scss */
 .watches-list li {
+  position: relative;
   flex: 1;
   background-color: rgba(5, 5, 5, 0.2);
   margin: 10px;
   position: relative;
+}
+/* line 190, ../sass/screen.scss */
+.watches-list li:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  width: 50%;
+  height: 2px;
+  background-color: silver;
+  left: 0;
+  transition: 0.3s ease-in-out;
+}
+/* line 200, ../sass/screen.scss */
+.watches-list li:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  width: 50%;
+  height: 2px;
+  background-color: white;
+  right: 0;
+  transition: 0.3s ease-in-out;
+}
+/* line 211, ../sass/screen.scss */
+.watches-list li:hover:before {
+  width: 10%;
+}
+/* line 214, ../sass/screen.scss */
+.watches-list li:hover:after {
+  width: 10%;
 }
 @media (max-width: 500px) {
   /* line 188, ../sass/screen.scss */
@@ -377,17 +410,18 @@ main {
     padding-right: 15px;
   }
 }
-/* line 200, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .watches-list .price {
   background-color: #1b6d85;
   bottom: 0;
   width: 100%;
   position: absolute;
   right: 0;
+  text-align: center;
 }
 
 @media screen and (min-width: 772px) {
-  /* line 210, ../sass/screen.scss */
+  /* line 240, ../sass/screen.scss */
   .watches-list {
     display: flex;
     flex-wrap: wrap;
@@ -395,26 +429,28 @@ main {
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 218, ../sass/screen.scss */
+  /* line 248, ../sass/screen.scss */
   .watches-list li {
     width: calc(100% / 3);
   }
 }
-/* line 223, ../sass/screen.scss */
+/* line 253, ../sass/screen.scss */
 .watch-wrapper {
+  cursor: pointer;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 10px;
+  position: relative;
   border-radius: 5px;
 }
 @media (max-width: 400px) {
-  /* line 223, ../sass/screen.scss */
+  /* line 253, ../sass/screen.scss */
   .watch-wrapper {
     margin: 0;
   }
 }
-/* line 233, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .watch-wrapper img {
   max-width: 225px;
   height: auto;
@@ -422,18 +458,18 @@ main {
   margin-right: auto;
   display: inline-block;
 }
-/* line 240, ../sass/screen.scss */
+/* line 273, ../sass/screen.scss */
 .watch-wrapper h4 {
   text-align: center;
 }
-/* line 243, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .watch-wrapper p {
   text-align: left;
   margin-top: 10px;
   padding: 10px;
 }
 
-/* line 250, ../sass/screen.scss */
+/* line 283, ../sass/screen.scss */
 .light {
   background-color: white;
   color: #171e25;

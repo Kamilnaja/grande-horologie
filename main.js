@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
                     price: Math.floor(Math.random() * 1000) + ".99$"
                 }
 
-            ],
+            ]
         }
     })
 });
