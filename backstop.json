@@ -27,8 +27,8 @@
       "selectors": [
         "document"
       ],
-      "readyEvent": "backstopjs_ready",
-      "delay": 1500,
+      "readyEvent": "null",
+      "delay": 0,
       "misMatchThreshold" : 0.1,
       "requireSameDimensions" : true,
       "onBeforeScript": "onBefore.js",
