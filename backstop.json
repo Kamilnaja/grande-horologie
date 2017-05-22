@@ -21,6 +21,7 @@
     {
       "label": "BackstopJS Homepage",
       "url": "http://192.168.0.19:8080/",
+      "referenceUrl" : "https://kamilnaja.github.io/grande-horologie/",
       "hideSelectors": [],
       "removeSelectors": [],
       "selectorExpansion": true,
@@ -43,7 +44,7 @@
     "ci_report": "backstop_data/ci_report"
   },
   "casperFlags": [],
-  "engine": "phantomjs",
-  "report": ["browser", "CLI"],
+  "engine": "backstopjs",
+  "report": ["browser"],
   "debug": false
 }

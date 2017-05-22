@@ -123,6 +123,9 @@ img {
     margin-right: 7px;
     font-size: 30px;
     margin-top: 7px;
+    text-align: center;
+    background-image: url("../img/menu.png");
+    background-size: 100%;
   }
 }
 
@@ -235,7 +238,7 @@ main {
     text-align: center;
   }
 }
-
+//todo -add one font declaration from google fonts
 @media screen and (min-width: 772px) {
   .watches-list {
     display: flex;

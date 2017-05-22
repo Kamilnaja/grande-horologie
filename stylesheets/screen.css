@@ -284,41 +284,44 @@ img {
     margin-right: 7px;
     font-size: 30px;
     margin-top: 7px;
+    text-align: center;
+    background-image: url("../img/menu.png");
+    background-size: 100%;
   }
 }
-/* line 129, ../sass/screen.scss */
+/* line 132, ../sass/screen.scss */
 .text-center {
   text-align: center !important;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 135, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
 .full-width {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .half-width {
   float: left;
   padding-right: 15px;
   padding-left: 15px;
 }
 @media (min-width: 768px) {
-  /* line 141, ../sass/screen.scss */
+  /* line 144, ../sass/screen.scss */
   .half-width {
     width: 50%;
   }
 }
 
-/* line 150, ../sass/screen.scss */
+/* line 153, ../sass/screen.scss */
 main {
   padding-top: 50px;
 }
 
-/* line 154, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 .hero-img {
   width: 100%;
   background-size: cover;
@@ -327,14 +330,14 @@ main {
   padding-bottom: 100px;
 }
 @media (min-width: 1366px) {
-  /* line 154, ../sass/screen.scss */
+  /* line 157, ../sass/screen.scss */
   .hero-img {
     padding-top: 250px;
     padding-bottom: 250px;
   }
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .middle-img-section {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -343,27 +346,27 @@ main {
   text-align: center;
 }
 @media (min-width: 1366px) {
-  /* line 166, ../sass/screen.scss */
+  /* line 169, ../sass/screen.scss */
   .middle-img-section {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
 
-/* line 178, ../sass/screen.scss */
+/* line 181, ../sass/screen.scss */
 .more-info {
   background-color: white;
   color: #171e25;
 }
 
-/* line 183, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .watches-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   list-style-type: none;
 }
-/* line 188, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
 .watches-list li {
   position: relative;
   flex: 1;
@@ -371,7 +374,7 @@ main {
   margin: 10px;
   position: relative;
 }
-/* line 190, ../sass/screen.scss */
+/* line 193, ../sass/screen.scss */
 .watches-list li:before {
   content: "";
   position: absolute;
@@ -382,7 +385,7 @@ main {
   left: 0;
   transition: 0.3s ease-in-out;
 }
-/* line 200, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 .watches-list li:after {
   content: "";
   position: absolute;
@@ -393,16 +396,16 @@ main {
   right: 0;
   transition: 0.3s ease-in-out;
 }
-/* line 211, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .watches-list li:hover:before {
   width: 10%;
 }
-/* line 214, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 .watches-list li:hover:after {
   width: 10%;
 }
 @media (max-width: 500px) {
-  /* line 188, ../sass/screen.scss */
+  /* line 191, ../sass/screen.scss */
   .watches-list li {
     margin-left: 0;
     margin-right: 0;
@@ -410,7 +413,7 @@ main {
     padding-right: 15px;
   }
 }
-/* line 229, ../sass/screen.scss */
+/* line 232, ../sass/screen.scss */
 .watches-list .price {
   background-color: #1b6d85;
   bottom: 0;
@@ -421,7 +424,7 @@ main {
 }
 
 @media screen and (min-width: 772px) {
-  /* line 240, ../sass/screen.scss */
+  /* line 243, ../sass/screen.scss */
   .watches-list {
     display: flex;
     flex-wrap: wrap;
@@ -429,12 +432,12 @@ main {
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 248, ../sass/screen.scss */
+  /* line 251, ../sass/screen.scss */
   .watches-list li {
     width: calc(100% / 3);
   }
 }
-/* line 253, ../sass/screen.scss */
+/* line 256, ../sass/screen.scss */
 .watch-wrapper {
   cursor: pointer;
   text-align: center;
@@ -445,12 +448,12 @@ main {
   border-radius: 5px;
 }
 @media (max-width: 400px) {
-  /* line 253, ../sass/screen.scss */
+  /* line 256, ../sass/screen.scss */
   .watch-wrapper {
     margin: 0;
   }
 }
-/* line 266, ../sass/screen.scss */
+/* line 269, ../sass/screen.scss */
 .watch-wrapper img {
   max-width: 225px;
   height: auto;
@@ -458,18 +461,18 @@ main {
   margin-right: auto;
   display: inline-block;
 }
-/* line 273, ../sass/screen.scss */
+/* line 276, ../sass/screen.scss */
 .watch-wrapper h4 {
   text-align: center;
 }
-/* line 276, ../sass/screen.scss */
+/* line 279, ../sass/screen.scss */
 .watch-wrapper p {
   text-align: left;
   margin-top: 10px;
   padding: 10px;
 }
 
-/* line 283, ../sass/screen.scss */
+/* line 286, ../sass/screen.scss */
 .light {
   background-color: white;
   color: #171e25;
